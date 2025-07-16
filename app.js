@@ -15,10 +15,11 @@ const authors = [
 const button = document.getElementsByTagName("button").item(0);
 const p = document.getElementsByTagName("p").item(0);
 const author = document.getElementsByTagName("label").item(0);
+
+
 button.addEventListener("click", () => {
   let idx = Math.floor(Math.random() * 5);
   console.log(idx);
-  p.classList.add("");
   p.innerText = quotes[idx];
   author.innerText = authors[idx];
 });
